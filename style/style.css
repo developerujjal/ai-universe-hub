@@ -1,0 +1,134 @@
+body,
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+.container {
+    max-width: 90%; /* Maximum width is 90% of the parent element */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some padding */
+}
+
+.ai-universe-hub h1, .feature-ai-card h3, .date-ai-card h3{
+    color: #111111;
+}
+
+.ai-universe-hub {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ai-universe-hub h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.ai-universe-hub button {
+    background-color: #EB5757;
+    padding: 15px 25px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ai-universe-hub button:hover{
+    background-color: #ca4949;
+}
+
+.wrapper {
+    padding: 40px 0px;
+}
+
+.singel-ai-card {
+    width: 32%;
+    padding: 18px;
+    border: 2px solid #1111111A;
+    border-radius: 12px;
+}
+
+.ai-card-img {
+    width: 100%;
+}
+
+.ai-card-img img {
+    width: 100%;
+}
+
+.feature-list ol {
+    margin-left: 25px;
+    color: #585858;
+    font-size: 1rem;
+}
+
+.feature-list ol li {
+    padding-bottom: 7px;
+}
+
+.feature-ai-card h3, .date-ai-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.feature-list {
+    padding: 10px 0px 20px 0px;
+}
+
+.feature-ai-card {
+    margin-top: 20px;
+    border-bottom: 1px solid #11111133;
+}
+
+
+.date-ai-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.icons-ai-card {
+    margin-top: 12px;
+}
+
+.icons-ai-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icons-ai-card i {
+    font-size: 25px;
+}
+
+.arrow-right {
+    display: flex;
+    background-color: #FEF7F7;
+    padding: 12px 13px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-right i{
+    color: #EB5757;
+}
+
+
+.ai-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
