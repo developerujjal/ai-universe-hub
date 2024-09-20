@@ -1,24 +1,8 @@
-const toolsDataLoad = async (isShowAll) => {
-    const response = await fetch('https://openapi.programming-hero.com/api/ai/tools');
-    const dataPromise = await response.json();
-    const data = dataPromise.data.tools;
-    displayTools(data, isShowAll)
-}
 
-
-const displayTools = (tools, isShowAll) => {
+const ShowTools = (tools) => {
 
     const aiCardElement = document.querySelector('.ai-card');
     aiCardElement.textContent = "";
-
-    if(!isShowAll){
-        tools = tools.splice(0, 6);
-    }
-    else{
-        const btnSeeMore = document.getElementById('see-more-btn');
-        btnSeeMore.classList.add('hidden');
-    }
-
 
     tools.forEach(tool => {
         const newDiv = document.createElement('div');
@@ -56,14 +40,3 @@ const displayTools = (tools, isShowAll) => {
         aiCardElement.appendChild(newDiv);
     })
 }
-
-
-
-
-// See More
-const displayAllToots = () => {
-    toolsDataLoad(true);
-}
-
-
-toolsDataLoad()

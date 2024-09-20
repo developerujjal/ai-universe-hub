@@ -66,7 +66,7 @@ body,
 }
 
 .feature-list ol {
-    margin-left: 25px;
+    margin-left: 22px;
     color: #585858;
     font-size: 1rem;
 }
@@ -130,5 +130,184 @@ body,
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 25px;
 }
 
+.btn-see-more-container {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* Modal */
+
+.ai-modal-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(57, 64, 71, 0.356);
+}
+
+.modal-main-box {
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+.modal-content-img-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.modal-content-box {
+    width: 50%;
+}
+
+.modal-img-box {
+    width: 50%;
+    border: 1px solid #E7E7E7;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 85px 0px;
+}
+
+.modal-content-box {
+    border: 1px solid #EB5757;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #EB57570D;
+}
+
+.modal-img {
+    width: 100%;
+    position: relative;
+}
+
+.modal-img img {
+    width: 100%;
+}
+
+.modal-des p {
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 1.02rem;
+}
+
+.modal-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    gap: 15px;
+    padding: 16px 0px;
+}
+
+.basic-price {
+    padding: 10px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.basic-price:first-child{
+    color: #03A30A;
+}
+
+.basic-price:nth-child(2){
+    color: #F28927;
+}
+
+.basic-price:last-child{
+    color: #EB5757;
+}
+
+.modal-feature-inte-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature h3, .modal-des p, .modal-img-des h3{
+    color: #111111;
+}
+
+.feature h3 {
+    font-size: 1.13rem;
+    margin-bottom: 10px;
+}
+
+.feature ul {
+    font-size: 0.77rem;
+    margin-left: 18px;
+}
+
+.feature ul li {
+    margin-bottom: 5px;
+    color: #585858;
+}
+
+.feature ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.modal-img-des {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.modal-img-des h3 {
+    margin-bottom: 6px;
+}
+
+.modal-img-des p{
+    line-height: 23px;
+    color: #585858;
+}
+
+.modal-main-box{
+    position: relative;
+}
+
+.cross-icon{
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #EB5757;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 50%;
+    transform: translate(10px, -10px);
+    cursor: pointer;
+    
+}
+
+.accuracy {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    color: white;
+    padding: 4px 13px;
+    background-color: #EB5757;
+    border-radius: 5px;
+}
+
+
+.accuracy p {
+    font-size: 0.6rem;
+}
